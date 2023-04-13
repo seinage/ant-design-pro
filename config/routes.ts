@@ -52,6 +52,19 @@ export default [
     component: './TableList',
   },
   {
+    path: '/equipCenter',
+    name: '设备中心',
+    icon: 'crown',
+    access: 'canAdmin',
+    routes: [
+      {
+        path: '/equipCenter/list',
+        name: '设备列表',
+        component: './EquipCenter/EquipList',
+      }
+    ],
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
