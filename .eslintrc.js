@@ -4,4 +4,9 @@ module.exports = {
     page: true,
     REACT_APP_ENV: true,
   },
+  // env: {
+  //   es2021: true,
+  //   browser: true,
+  //   node: true,
+  // }
 };
