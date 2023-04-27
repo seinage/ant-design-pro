@@ -15,10 +15,11 @@
   {
     path: '/equipCenter',
     icon: 'crown',
+    name: '设备中心',
     access: 'canAdmin',
     routes: [
       { path: '/equipCenter', redirect: '/equipCenter/list' },
-      { path: '/equipCenter/list', component: './EquipCenter/EquipList' },
+      { name: '设备列表',path: '/equipCenter/list', component: './EquipCenter/EquipList' },
     ],
   },
   { path: '/', redirect: '/welcome' },
