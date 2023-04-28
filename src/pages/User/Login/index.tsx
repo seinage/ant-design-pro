@@ -25,7 +25,7 @@ const LoginMessage: React.FC<{
 };
 const Login: React.FC = () => {
   const [userLoginState, setUserLoginState] = useState<API.LoginResult>({});
-  const {initialState, setInitialState} = useModel('@@initialState');
+  const {initialState, setInitialState,} = useModel('@@initialState');
   const containerClassName = useEmotionCss(() => {
     return {
       display: 'flex',
