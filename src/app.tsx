@@ -14,6 +14,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
 
 /**
+ * 全局初始状态
  * @see  https://umijs.org/zh-CN/plugins/plugin-initial-state
  * */
 export async function getInitialState(): Promise<{
@@ -36,15 +37,15 @@ export async function getInitialState(): Promise<{
   // 如果不是登录页面，执行
   const { location } = history;
   if (location.pathname !== loginPath) {
-    const currentUser = await fetchUserInfo();
+    // const currentUser = await fetchUserInfo();
     return {
-      fetchUserInfo,
-      currentUser,
+      // fetchUserInfo,
+      // currentUser,
       settings: defaultSettings as Partial<LayoutSettings>,
     };
   }
   return {
-    fetchUserInfo,
+    // fetchUserInfo,
     settings: defaultSettings as Partial<LayoutSettings>,
   };
 }

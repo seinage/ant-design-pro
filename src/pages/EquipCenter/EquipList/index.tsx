@@ -5,7 +5,7 @@ import {useModel} from "@umijs/max";
 export type EquipListProps = never
 
 const EquipList: FC<EquipListProps> = (props) => {
-  const {increment, decrement} = useModel('equipCenter')
+  const {increment,decrement} = useModel('equipCenter')
 
   const [createModalOpen, handleModalOpen] = useState<boolean>(false)
   const [updateModalOpen, handleUpdateModalOpen] = useState<boolean>(false)
