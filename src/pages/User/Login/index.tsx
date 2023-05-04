@@ -64,7 +64,7 @@ const Login: React.FC = () => {
       }
       console.log(msg);
       // 如果失败去设置用户错误信息
-      setUserLoginState(msg);
+      setUserLoginState({...msg,type:'account'});
     } catch (error) {
       const defaultLoginFailureMessage = '登录失败，请重试！';
       console.log(error);
@@ -104,7 +104,7 @@ const Login: React.FC = () => {
         >
 
           {status === 'error' && loginType === 'account' && (
-            <LoginMessage content={'错误的用户名和密码(admin/ant.design)'}/>
+            <LoginMessage content={'错误的用户名和密码'}/>
           )}
           {(
             <>
