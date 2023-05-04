@@ -1,7 +1,7 @@
 // https://umijs.org/config/
 import {defineConfig} from '@umijs/max';
 
-const { REACT_APP_ENV = 'git' } = process.env;
+const { REACT_APP_ENV = 'pre' } = process.env;
 export default defineConfig({
   // base:'./',
   // publicPath:'./',
