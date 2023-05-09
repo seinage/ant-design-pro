@@ -45,6 +45,7 @@ export async function getInitialState(): Promise<{
     };
   }
   return {
+
     fetchUserInfo,
     settings: defaultSettings as Partial<LayoutSettings>,
   };
